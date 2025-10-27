@@ -37,7 +37,12 @@ body {
     background-repeat: no-repeat;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Unbounded', cursive;
 }
 
@@ -244,7 +249,8 @@ a {
     transition: background 0.25s;
 }
 
-.toggle-switch:before, .toggle-switch:after {
+.toggle-switch:before,
+.toggle-switch:after {
     content: "";
 }
 
@@ -264,11 +270,11 @@ a {
     background: linear-gradient(to bottom, #fff 0%, #fff 100%);
 }
 
-.toggle-checkbox:checked + .toggle-switch {
+.toggle-checkbox:checked+.toggle-switch {
     background: var(--lils);
 }
 
-.toggle-checkbox:checked + .toggle-switch:before {
+.toggle-checkbox:checked+.toggle-switch:before {
     left: 3rem;
 }
 
@@ -284,6 +290,10 @@ a {
     .app__section-banner-container {
         width: 48rem;
     }
+
+    .app__languages {
+        right: 5rem;
+    }
 }
 
 /* Para Celulares */
@@ -298,5 +308,17 @@ a {
 
     .app__card-timer {
         font-size: 6rem;
+    }
+
+    .app__header {
+        position: static;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .app__languages {
+        right: 0;
+        position: relative;
     }
 }
