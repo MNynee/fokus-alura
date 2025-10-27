@@ -198,7 +198,7 @@ a {
 
 .app__card-primary-button {
     padding: 0.8rem;
-    width: 14rem;
+    width: 16rem;
     color: var(--color-secondary);
     border: none;
     cursor: pointer;
@@ -211,6 +211,12 @@ a {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+
+    span {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+    }
 }
 
 .app__footer {
