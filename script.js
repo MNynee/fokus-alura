@@ -26,7 +26,7 @@ const playSound = new Audio('/sons/play.wav');
 const pauseSound = new Audio('/sons/pause.mp3');
 const endSound = new Audio('/sons/beep.mp3');
 
-let timeInSeconds = 1500;
+let timeInSeconds = 10;
 let timerInterval = null;
 
 languageSelector.addEventListener('click', () => {
@@ -159,6 +159,12 @@ const countDown = () => {
             alert('Le temps est fini!');
         } else if (html.lang === 'pl') {
             alert('Czas się skończył!');
+        }
+
+        const activeFocus = html.getAttribute('data-contexto') == 'foco';
+        if (activeFocus) {
+            const event = new CustomEvent('focusFinished');
+            document.dispatchEvent(event);
         }
         resetTimer();
         return;
