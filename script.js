@@ -26,7 +26,7 @@ const playSound = new Audio('/sons/play.wav');
 const pauseSound = new Audio('/sons/pause.mp3');
 const endSound = new Audio('/sons/beep.mp3');
 
-let timeInSeconds = 10;
+let timeInSeconds = 1500;
 let timerInterval = null;
 
 languageSelector.addEventListener('click', () => {
