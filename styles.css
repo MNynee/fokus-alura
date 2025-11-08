@@ -545,6 +545,10 @@ a {
     cursor: not-allowed;
 }
 
+.app__form-footer__button--delete {
+    display: none;
+}
+
 /* Para Tablets */
 @media (max-width: 1024px) and (min-width: 768px) {
     .app__section-banner-container {
